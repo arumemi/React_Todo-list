@@ -22,7 +22,7 @@ const TodoInput = ({ onAddTodo }) => {
         onChange={(e) => setTask(e.target.value)}
       />
       <button type="submit" className={styles.button}>
-        Add Task
+        Adicionar Tarefa
       </button>
     </form>
   )

@@ -5,7 +5,7 @@ import Typography from '../container/Typography/Typography'
 const Tittle = () => {
   return (
    <Typography fontSize="32px" bold>
-     <div className={styles.title}>Todo-App</div>
+     <div className={styles.title}>To-do</div>
    </Typography>
   )
 }
