@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: gray;
+  font-size: 18px;
+}
+
+.empty p {
+  margin: 0;
+}

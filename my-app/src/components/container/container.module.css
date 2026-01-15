@@ -1,0 +1,13 @@
+.container {
+    background: linear-gradient(rgba(106, 109, 119, 0.65) 0%,  #C8D9EA 33%, #A3C4DC 100%);
+    box-shadow:  10px 10px 50px #b0c1d3,
+                 -10px -10px 50px #dfe9f7;
+    border-radius: 39px;
+    padding: 24px 63px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}   
