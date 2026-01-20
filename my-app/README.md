@@ -7,13 +7,13 @@ Uma aplicação moderna e interativa de lista de tarefas construída com React e
 
 ## 🚀 Funcionalidades
 
-- ✅ **Adicionar Tarefas** - Adicione rapidamente novas tarefas à sua lista
-- ✅ **Marcar como Concluída** - Marque tarefas concluídas com feedback visual
-- ✅ **Remover Tarefas** - Remova tarefas que você não precisa mais
-- ✅ **Filtrar Tarefas** - Visualize todas as tarefas, pendentes ou concluídas
-- ✅ **Estatísticas de Tarefas** - Contadores em tempo real de tarefas totais, pendentes e concluídas
-- ✅ **Design Responsivo** - Funciona perfeitamente em desktop e dispositivos móveis
-- ✅ **Interface Moderna** - Interface limpa com animações e transições suaves
+- ✅ **Adicionar Tarefas** 
+- ✅ **Marcar como Concluída** 
+- ✅ **Remover Tarefas** 
+- ✅ **Filtrar Tarefas** 
+- ✅ **Estatísticas de Tarefas** 
+- ✅ **Design Responsivo** 
+- ✅ **Interface Moderna** 
 
 ## 🛠️ Tecnologias Utilizadas
 
