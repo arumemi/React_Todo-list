@@ -1,36 +1,41 @@
+import { memo } from 'react'
+import { useTodoContext } from '../../context/TodoContext'
 import styles from './TodoFilter.module.css'
 
-const TodoFilter = ({ filter, onFilterChange, stats }) => {
+const TodoFilter = memo(() => {
+  const { filter, setFilter, stats } = useTodoContext()
+
   return (
-    <div className={styles.container}>
+    <div className={styles.filter}>
       <div className={styles.stats}>
-        <span className={styles.stat}>Total: {stats.total}</span>
-        <span className={styles.stat}>Pendentes: {stats.pending}</span>
-        <span className={styles.stat}>Concluídas: {stats.completed}</span>
+        <span>Total: {stats.total}</span>
+        <span>Concluídas: {stats.completed}</span>
+        <span>Pendentes: {stats.pending}</span>
       </div>
-      
-      <div className={styles.filters}>
+      <div className={styles.buttons}>
         <button
-          className={`${styles.filterBtn} ${filter === 'all' ? styles.active : ''}`}
-          onClick={() => onFilterChange('all')}
+          className={filter === 'all' ? styles.active : ''}
+          onClick={() => setFilter('all')}
         >
-          Todos
+          Todas
         </button>
         <button
-          className={`${styles.filterBtn} ${filter === 'pending' ? styles.active : ''}`}
-          onClick={() => onFilterChange('pending')}
+          className={filter === 'pending' ? styles.active : ''}
+          onClick={() => setFilter('pending')}
         >
           Pendentes
         </button>
         <button
-          className={`${styles.filterBtn} ${filter === 'completed' ? styles.active : ''}`}
-          onClick={() => onFilterChange('completed')}
+          className={filter === 'completed' ? styles.active : ''}
+          onClick={() => setFilter('completed')}
         >
           Concluídas
         </button>
       </div>
     </div>
   )
-}
+})
+
+TodoFilter.displayName = 'TodoFilter'
 
 export default TodoFilter

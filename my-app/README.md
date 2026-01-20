@@ -93,8 +93,8 @@ my-app/
 │   │   │   └── Typography/
 │   │   │       └── Typography.jsx
 │   │   ├── Title/
-│   │   │   ├── Tittle.jsx
-│   │   │   └── Tittle.module.css
+│   │   │   ├── Title.jsx
+│   │   │   └── Title.module.css
 │   │   ├── TodoInput/
 │   │   │   ├── TodoInput.jsx
 │   │   │   └── TodoInput.module.css
@@ -122,7 +122,7 @@ my-app/
 
 - **Container** - Wrapper principal do layout com largura máxima e centralização
 - **Typography** - Componente de texto com tamanho de fonte e peso personalizáveis
-- **Tittle** - Título/cabeçalho da aplicação
+- **e** - Título/cabeçalho da aplicação
 - **TodoInput** - Campo de entrada e botão para adicionar novas tarefas
 - **TodoItem** - Tarefa individual com checkbox e botão de exclusão
 - **TodoList** - Renderiza a lista de tarefas filtradas

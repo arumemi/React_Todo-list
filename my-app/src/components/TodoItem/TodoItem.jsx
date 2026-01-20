@@ -1,6 +1,7 @@
+import { memo } from 'react'
 import styles from './TodoItem.module.css'
 
-const TodoItem = ({ todo, onToggle, onDelete }) => {
+const TodoItem = memo(({ todo, onToggle, onDelete }) => {
   return (
     <div className={`${styles.item} ${todo.completed ? styles.completed : ''}`}>
       <label className={styles.label}>
@@ -21,6 +22,8 @@ const TodoItem = ({ todo, onToggle, onDelete }) => {
       </button>
     </div>
   )
-}
+})
+
+TodoItem.displayName = 'TodoItem'
 
 export default TodoItem

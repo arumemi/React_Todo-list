@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import { memo } from 'react'
+import { useTodoContext } from '../../context/TodoContext'
+import { useInput } from '../../hooks/useInput'
 import styles from './TodoInput.module.css'
 
-const TodoInput = ({ onAddTodo }) => {
-  const [task, setTask] = useState('')
+const TodoInput = memo(() => {
+  const task = useInput('')
+  const { addTodo } = useTodoContext()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (task.trim()) {
-      onAddTodo(task)
-      setTask('')
+    if (task.value.trim()) {
+      addTodo(task.value)
+      task.reset()
     }
   }
 
@@ -17,15 +20,17 @@ const TodoInput = ({ onAddTodo }) => {
       <input
         type="text"
         className={styles.input}
-        placeholder="Add a new task..."
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
+        placeholder="Adicionar nova tarefa..."
+        value={task.value}
+        onChange={task.onChange}
       />
       <button type="submit" className={styles.button}>
         Adicionar Tarefa
       </button>
     </form>
   )
-}
+})
+
+TodoInput.displayName = 'TodoInput'
 
 export default TodoInput
